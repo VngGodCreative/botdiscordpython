@@ -194,10 +194,6 @@ def is_admin():
 
 Hãy thoải mái fork repository này, thực hiện các thay đổi, và gửi pull request. Mọi đóng góp đều được chào đón!
 
-## Giấy phép
-
-Dự án này được cấp phép dưới giấy phép MIT. Xem tệp `LICENSE` để biết thêm chi tiết.
-
 ---
 
 Cảm ơn bạn đã sử dụng DCS Creative BOT! Nếu bạn có bất kỳ câu hỏi nào hoặc cần trợ giúp, vui lòng liên hệ với [vnggodcreative@gmail.com](mailto:vnggodcreative@gmail.com).
