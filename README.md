@@ -1,8 +1,8 @@
 # DCS Creative BOT
 
-DCS Creative BOT is a powerful Discord bot with multiple features for server management, user engagement, and entertainment. The bot is organized into several modules, each handling different aspects of functionality.
+DCS Creative BOT là một bot Discord mạnh mẽ với nhiều tính năng quản lý máy chủ, tăng cường tương tác người dùng và giải trí. Bot được tổ chức thành nhiều module khác nhau, mỗi module xử lý các chức năng riêng biệt.
 
-## Project Structure
+## Cấu trúc dự án
 
 ```
 project_root/
@@ -70,84 +70,84 @@ project_root/
 ├── Start.bat
 ```
 
-## Features
+## Tính năng
 
-### Admin Commands
-- `ban_unban.py`: Commands to ban and unban users.
-- `clear.py`: Command to clear messages.
-- `mute_unmute.py`: Commands to mute and unmute users.
-- `reaction_role.py`: Command to manage reaction roles.
-- `setup.py`: Initial setup commands for the bot.
-- `status.py`: Command to check the bot's status.
-- `cuop_emoji.py`: Command related to emoji theft.
-- `get_avatar.py`: Command to get user's avatar.
-- `help_command.py`: Custom help command.
-- `info_server.py`: Command to get server information.
-- `info_user.py`: Command to get user information.
-- `list_emoji.py`: Command to list all server emojis.
-- `ping.py`: Command to check bot's latency.
+### Lệnh Quản trị viên
+- `ban_unban.py`: Lệnh cấm và bỏ cấm người dùng.
+- `clear.py`: Lệnh xóa tin nhắn.
+- `mute_unmute.py`: Lệnh tắt và mở tiếng người dùng.
+- `reaction_role.py`: Lệnh quản lý vai trò phản ứng.
+- `setup.py`: Lệnh cài đặt ban đầu cho bot.
+- `status.py`: Lệnh kiểm tra trạng thái của bot.
+- `cuop_emoji.py`: Lệnh liên quan đến trộm emoji.
+- `get_avatar.py`: Lệnh lấy avatar của người dùng.
+- `help_command.py`: Lệnh trợ giúp tùy chỉnh.
+- `info_server.py`: Lệnh lấy thông tin máy chủ.
+- `info_user.py`: Lệnh lấy thông tin người dùng.
+- `list_emoji.py`: Lệnh liệt kê tất cả emoji của máy chủ.
+- `ping.py`: Lệnh kiểm tra độ trễ của bot.
 
-### Event Listeners
-- `ban.py`: Event listener for user bans.
-- `booster_update.py`: Event listener for server boosts.
-- `bye.py`: Event listener for user goodbyes.
-- `counting.py`: Event listener for counting game.
-- `member_update.py`: Event listener for member updates.
-- `message_update.py`: Event listener for message updates.
-- `server_update.py`: Event listener for server updates.
-- `unban.py`: Event listener for user unbans.
-- `welcome.py`: Event listener for welcoming new users.
+### Sự kiện Listener
+- `ban.py`: Listener cho sự kiện cấm người dùng.
+- `booster_update.py`: Listener cho sự kiện tăng cường máy chủ.
+- `bye.py`: Listener cho sự kiện người dùng rời đi.
+- `counting.py`: Listener cho trò chơi đếm số.
+- `member_update.py`: Listener cho sự kiện cập nhật thành viên.
+- `message_update.py`: Listener cho sự kiện cập nhật tin nhắn.
+- `server_update.py`: Listener cho sự kiện cập nhật máy chủ.
+- `unban.py`: Listener cho sự kiện bỏ cấm người dùng.
+- `welcome.py`: Listener chào mừng người dùng mới.
 
-### Music Commands
-- `control_music.py`: Commands to control music playback.
-- `play.py`: Command to play music.
-- `playlist_management.py`: Commands to manage playlists.
-- `voice_bots.py`: Commands for voice channel bots.
-- `music_cog.py`: Main music cog handling music-related commands.
+### Lệnh Âm nhạc
+- `control_music.py`: Lệnh điều khiển phát nhạc.
+- `play.py`: Lệnh phát nhạc.
+- `playlist_management.py`: Lệnh quản lý danh sách phát.
+- `voice_bots.py`: Lệnh cho các bot trong kênh thoại.
+- `music_cog.py`: Cog chính xử lý các lệnh liên quan đến âm nhạc.
 
-### Utility Commands
-- `common.py`: Common utilities used across the bot.
-- `db.py`: Database utilities.
+### Lệnh Tiện ích
+- `common.py`: Các tiện ích chung được sử dụng trong bot.
+- `db.py`: Các tiện ích cơ sở dữ liệu.
 
-## Setup and Installation
+## Cài đặt và Thiết lập
 
-1. **Clone the repository:**
+1. **Clone repository:**
    ```sh
    git clone https://github.com/vnggodcreative/botdiscordpython.git
    cd botdiscordpython
    ```
 
-2. **Create a virtual environment:**
+2. **Tạo môi trường ảo:**
    ```sh
    python -m venv venv
    ```
 
-3. **Activate the virtual environment:**
-   - On Windows:
+3. **Kích hoạt môi trường ảo:**
+   - Trên Windows:
      ```sh
      venv\Scripts\activate
      ```
-   - On macOS/Linux:
+   - Trên macOS/Linux:
      ```sh
      source venv/bin/activate
      ```
 
-4. **Install dependencies:**
+4. **Cài đặt các gói phụ thuộc:**
    ```sh
    pip install -r requirements.txt
    ```
 
-5. **Set up environment variables:**
-   - Create a `.env` file in the project root and add your configuration variables (e.g., bot token, database credentials).
+5. **Thiết lập các biến môi trường:**
+   - Tạo tệp `.env` trong thư mục gốc của dự án và thêm các biến cấu hình của bạn (ví dụ: token bot, thông tin cơ sở dữ liệu).
 
-6. **Run the bot:**
+6. **Chạy bot:**
    ```sh
    python main.py
    ```
 
-## Permissions and Role Checks
+## Quyền và Kiểm tra Vai trò
 
-The bot uses several decorators to check for permissions and roles. Ensure you have the necessary roles and permissions set up in your Discord server.
+Bot sử dụng nhiều decorator để kiểm tra quyền và vai trò. Đảm bảo bạn đã thiết lập các vai trò và quyền cần thiết trong máy chủ Discord của bạn.
 
 ### Decorators
 - `@commands.is_owner()`
@@ -161,8 +161,8 @@ The bot uses several decorators to check for permissions and roles. Ensure you h
 - `@commands.has_permissions(kick_members=True)`
 - `@commands.has_permissions(manage_emojis=True)`
 
-### Permission Check Functions
-Ensure the following functions are defined in your bot to handle custom permission checks:
+### Hàm Kiểm tra Quyền
+Đảm bảo các hàm sau được định nghĩa trong bot của bạn để xử lý kiểm tra quyền tùy chỉnh:
 
 ```python
 def has_any_role_or_owner(role_ids):
@@ -171,7 +171,7 @@ def has_any_role_or_owner(role_ids):
             return True
         for role_id in role_ids:
             role = discord.utils.get(ctx.author.roles, id=role_id)
-            if role is not None:
+            if role is không None:
                 return True
         raise commands.MissingRole(role_ids)
     return commands.check(predicate)
@@ -187,19 +187,17 @@ def has_permissions_or_owner(**perms):
 def is_admin():
     async def predicate(ctx):
         return ctx.author.guild_permissions.administrator
-    return commands.check
-
-(predicate)
+    return commands.check(predicate)
 ```
 
-## Contributing
+## Đóng góp
 
-Feel free to fork this repository, make changes, and submit pull requests. All contributions are welcome!
+Hãy thoải mái fork repository này, thực hiện các thay đổi, và gửi pull request. Mọi đóng góp đều được chào đón!
 
-## License
+## Giấy phép
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+Dự án này được cấp phép dưới giấy phép MIT. Xem tệp `LICENSE` để biết thêm chi tiết.
 
 ---
 
-Thank you for using DCS Creative BOT! If you have any questions or need assistance, please reach out to [vnggodcreative@gmail.com](mailto:vnggodcreative@gmail.com).
+Cảm ơn bạn đã sử dụng DCS Creative BOT! Nếu bạn có bất kỳ câu hỏi nào hoặc cần trợ giúp, vui lòng liên hệ với [vnggodcreative@gmail.com](mailto:vnggodcreative@gmail.com).
