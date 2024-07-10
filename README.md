@@ -9,9 +9,7 @@ project_root/
 │
 ├── cogs/
 │   ├── commands/
-│   │   ├── __pycache__/
 │   │   ├── admin/
-│   │   │   ├── __pycache__/
 │   │   │   ├── ban_unban.py
 │   │   │   ├── clear.py
 │   │   │   ├── mute_unmute.py
@@ -26,7 +24,6 @@ project_root/
 │   │   │   ├── list_emoji.py
 │   │   │   ├── ping.py
 │   │   ├── events/
-│   │   │   ├── __pycache__/
 │   │   │   ├── ban.py
 │   │   │   ├── booster_update.py
 │   │   │   ├── bye.py
@@ -37,20 +34,9 @@ project_root/
 │   │   │   ├── unban.py
 │   │   │   ├── welcome.py
 │   │   ├── utils/
-│   │   │   ├── __pycache__/
 │   │   │   ├── database_utils.py
 │   │   ├── vc/
-│   │       ├── music/
-│   │       │   ├── __pycache__/
-│   │       │   ├── Commands/
-│   │       │   │   ├── __pycache__/
-│   │       │   │   ├── control_music.py
-│   │       │   │   ├── play.py
-│   │       │   │   ├── playlist_management.py
-│   │       │   │   ├── voice_bots.py
-│   │       │   ├── music_cog.py
 │   │   ├── voice/
-│   │       ├── __pycache__/
 │   │       ├── voice.py
 │   ├── data/
 │   │   ├── channel_ids.json
@@ -58,7 +44,6 @@ project_root/
 │   │   ├── playlists.db
 │   │   ├── playlists.json
 │   ├── utils/
-│       ├── __pycache__/
 │       ├── __init__.py
 │       ├── common.py
 │       ├── db.py
@@ -97,13 +82,6 @@ project_root/
 - `server_update.py`: Listener cho sự kiện cập nhật máy chủ.
 - `unban.py`: Listener cho sự kiện bỏ cấm người dùng.
 - `welcome.py`: Listener chào mừng người dùng mới.
-
-### Lệnh Âm nhạc
-- `control_music.py`: Lệnh điều khiển phát nhạc.
-- `play.py`: Lệnh phát nhạc.
-- `playlist_management.py`: Lệnh quản lý danh sách phát.
-- `voice_bots.py`: Lệnh cho các bot trong kênh thoại.
-- `music_cog.py`: Cog chính xử lý các lệnh liên quan đến âm nhạc.
 
 ### Lệnh Tiện ích
 - `common.py`: Các tiện ích chung được sử dụng trong bot.
